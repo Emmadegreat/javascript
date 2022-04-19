@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-msedge",
+            "name": "https://github.com/Emmadegreat/javascript.git",
+            "request": "launch",
+            "url": "https://github.com/Emmadegreat/javascript.git"
+        }
+    ]
+}
