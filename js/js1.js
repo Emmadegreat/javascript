@@ -34,3 +34,14 @@ document.write((c+=6) + "<br>");
 
 document.write(typeof(c)+ '<br>');
 alert(5**2);
+
+//js event and event handlers
+//html element : event: 'js codes'
+
+function clickMe(){
+    document.getElementById('demo').innerHTML='WELCOME HERE';
+}
+
+const date=()=>{
+    document.getElementById('demo').innerHTML=Date();
+}
