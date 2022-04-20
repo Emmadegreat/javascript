@@ -33,7 +33,7 @@ document.write((d+=c) + "<br>");
 document.write((c+=6) + "<br>");
 
 document.write(typeof(c)+ '<br>');
-alert(5**2);
+alert(5**3);
 
 //js event and event handlers
 //html element : event: 'js codes'
@@ -58,6 +58,8 @@ document.write(r+', while '+w + "<br>");
 
 document.write('the length of: '+ r +' is: '+ r.length + "<br>");
 
+
+
 let h = "her name is \"Ada\".";
 document.write(h +"<br>");
 document.write("type of: " + typeof(h) + ". <br>")
@@ -74,17 +76,19 @@ let text = "we are coming";
 let slice = text.slice(4,8);
 
 document.write(slice +"<br>");
-document.write(text.slice(3,13) +"<br>");
+document.write(text.slice(3,10) +"<br>");
 
 // substring:this is the same thing with slice but doest take negative value.
 //subtring(start, end-1); 
-let txt = 'welcome here is the place';
-let txt1 = txt.substring(0,9);
-document.write(txt1 + "<br");
+let txt_ = 'welcome here is the place';
+let txt_1 = txt_.substring(0,5);
+document.write(txt_1 + "<br");
 
-//substr: similar to the slice but the second parameter specifies the length of the characters to be extracted
+//substr: similar to the slice but the second parameter specifies the length 
+//of the characters to be extracted
 //subtsr(start, length to be exttrated) 
 
-let strt = 'we want to examplify this method of extraction';
-//let txt_2 = txt2.substr(3,7);
-document.write(strt);
+let txt = 'we want to examplify this method of extraction';
+let txt_2 = txt.substr(0,7);
+document.write(txt_2 + "<br>");
+
