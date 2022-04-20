@@ -82,13 +82,44 @@ document.write(text.slice(3,10) +"<br>");
 //subtring(start, end-1); 
 let txt_ = 'welcome here is the place';
 let txt_1 = txt_.substring(0,5);
-document.write(txt_1 + "<br");
+document.write(txt_1 + "<br>") ;
 
 //substr: similar to the slice but the second parameter specifies the length 
 //of the characters to be extracted
-//subtsr(start, length to be exttrated) 
+//subtsr(start, length to be exttrate
 
-let txt = 'we want to examplify this method of extraction';
-let txt_2 = txt.substr(0,7);
-document.write(txt_2 + "<br>");
+let test = 'i am here';
+document.write(test.substr(0, 4)+ "<br><br>");
+
+let upper = 'convert to uppercase';
+document.write(upper.toUpperCase() + "<br> <br>")
+
+let lower = 'I HAVE BEEN CONVERTED TO LOWERCASE';
+document.write(lower.toLowerCase() + "<br> <br>")
+
+function replaceMe(){
+    let replac = document.getElementById('demo').innerHTML;
+    document.getElementById('demo').innerHTML = replac.replace('js', 'HTML');
+}
+replaceMe() + "<br> <br>";
+
+//let pad = '5';
+    //document.getElementById('demo').innerHTML = pad.padStart(4,'x');
+
+//let pad = '5';
+    //document.getElementById('demo').innerHTML = pad.padEnd(4,'x');
+
+let cat = 'pussy';
+let cat_1 = 'senior pussy';
+//document.getElementById('js').innerHTML = cat.concat(" ", cat_1);
+document.getElementById('js').innerHTML = (cat.toUpperCase().concat(" ", cat_1.toUpperCase()));
+
+let pos = 'position';
+document.write(pos.charAt(4) + "<br><br>");
+
+
+let split = 'splitting';
+document.write(split.split("") + "<br><br>");
+
+
 
