@@ -121,5 +121,14 @@ document.write(pos.charAt(4) + "<br><br>");
 let split = 'splitting';
 document.write(split.split("") + "<br><br>");
 
+let includ = 'this is an include example';
+//document.getElementById('js').innerHTML = includ.includes('example');
+document.write(includ.includes('example') +"<br>");
+
+let sea = 'example of seaerch';
+document.write(sea.search('of') + "<br>")
+
+let match = 'match in js returns true if the word specified is in the list of words';
+document.write(match.match('returns') +"<br>")
 
 

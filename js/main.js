@@ -1,9 +1,10 @@
-
+"<p id="nam">owner's name</p>"
 alert('welome');
 function myName(){
-    name = 'Emma';
+    let name = document.getElementById('nam').innerHTML;
+    document.getElementById('nam').innerHTML = 'welcome owner';
 }
-console.log(myName);
+myName();
 var a = 'name';
 document.write(a + " <br>");
 //document.getElementById('h2').innerHTML=style.fontSize(50);
