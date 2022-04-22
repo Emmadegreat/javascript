@@ -141,4 +141,20 @@ document.write(new2);
 document.write(new Date(86400000) + "<br>")
 document.write(new Date('2022') + "<br>")
 document.write('Copyright  ');document.write(new Date().getFullYear() + "<br>")
-document.getElementById('js').innerHTML = new Date().getFullYear();
+document.getElementById('js').innerHTML = new Date().getFullYear() + "<br>";
+
+function myFunction(){
+  let voteable;
+  let age = Number(document.getElementById('age').value);
+  
+
+  if(isNaN(age)){
+    voteable = 'Input is not a number ';
+
+  }else{
+    voteable = (age < 18 )? 'eligible ' : 'not eligible ';
+ 
+  }
+  
+  document.getElementById('js').innerHTML = voteable + 'to vote';
+}
