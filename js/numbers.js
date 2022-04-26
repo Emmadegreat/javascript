@@ -35,7 +35,7 @@ let j = 9.656;
 document.getElementById('numbers').innerHTML = j.toExponential(2) + "<br>" +
 j.toExponential(4);
 
-document.write(j.toPrecision(2) +" precision gives you length of the number specified :<br>") + 
+document.write(j.toPrecision(2) + " precision gives you length of the number specified :<br>") + 
 document.write(j.toPrecision(6) + "<br");
 
 let v = 123;

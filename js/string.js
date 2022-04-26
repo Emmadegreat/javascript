@@ -1,6 +1,9 @@
+
+
 //array and objects
 const cars = ['toyota', 'benz', 'volvo'];//array
 cars.push('Hummer');
+//cars.pop();
 document.write('this is the list of cars we have in stock now: '+' "' + cars +'." <br>');
 
 const student = {
@@ -15,8 +18,8 @@ student.name = 'male';
 document.write(student.name+ '<br>');
 
 {
-    var x = 10;
     var x = 5;
+    var x = 10;
 }
 document.write(x + '<br>')
 
@@ -39,9 +42,11 @@ alert(5**3);
 //html element : event: 'js codes'
 
 function clickMe(){
-    document.getElementById('demo').innerHTML='WELCOME HERE';
+    code = document.getElementById('code').innerHTML='WELCOME HERE';
+    document.getElementById('code').style.color = 'red';
+    document.getElementById('code').style.fontStyle = 'italic';
+    document.getElementById("code").style.fontSize = '50px';
 }
-
 const date=()=>{
     document.getElementById('demo').innerHTML=Date();
 }
@@ -52,11 +57,11 @@ let g = "girl";
 let f = b +' and '+ g
 document.write(f +" <br>");
 
-let r = 'obi is "running"';
+let r = `obi is "running"`;
 let w = "ada is 'walking'";
-document.write(r+', while '+w + "<br>");
+document.write(r.concat(', while ', w, '<br>'));
 
-document.write('the length of: '+ r +' is: '+ r.length + "<br>");
+document.write('the length of: '.concat(r, ' is: ', r.length, "<br>"));
 
 
 
@@ -76,7 +81,7 @@ let text = "we are coming";
 let slice = text.slice(4,8);
 
 document.write(slice +"<br>");
-document.write(text.slice(3,10) +"<br>");
+document.write(text.slice(3,14) +"<br>");
 
 // substring:this is the same thing with slice but doest take negative value.
 //subtring(start, end-1); 
@@ -86,10 +91,18 @@ document.write(txt_1 + "<br>") ;
 
 //substr: similar to the slice but the second parameter specifies the length 
 //of the characters to be extracted
-//subtsr(start, length to be exttrate
+//subtsr(start, length to be extracted
 
 let test = 'i am here';
 document.write(test.substr(0, 4)+ "<br><br>");
+
+let cont = 'the coding challenge at google <a href="https://www.google.com">click here to read more</a>';
+let sub = cont.substr(0,92);
+document.getElementById("pp").innerHTML = sub + " ...";
+
+function readMore(){
+    more = document.getElementById('more').innerHTML = '<a href="/html/loop.html">read more</a>';
+}
 
 let upper = 'convert to uppercase';
 document.write(upper.toUpperCase() + "<br> <br>")
@@ -112,7 +125,7 @@ replaceMe() + "<br> <br>";
 let cat = 'pussy';
 let cat_1 = 'senior pussy';
 //document.getElementById('js').innerHTML = cat.concat(" ", cat_1);
-document.getElementById('js').innerHTML = (cat.toUpperCase().concat(" ", cat_1.toUpperCase()));
+document.getElementById('js').innerHTML = (cat.toUpperCase().concat(" and ", cat_1.toUpperCase()));
 
 let pos = 'position';
 document.write(pos.charAt(4) + "<br><br>");

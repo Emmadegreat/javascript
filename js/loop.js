@@ -12,6 +12,7 @@ for (let i = 0; i < cars.length; i++) {
 document.getElementById('loop').innerHTML = txt;
 txt += "</ol>" + cars + "<br>";
 
+
 //for in loop: this loops through the propertires of an object.
 
 const person = {name:'emma', age:30, sex:'male'};
