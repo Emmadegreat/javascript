@@ -72,3 +72,4 @@ for (let i = 0; i < 11; i++) {
   tx += "The number is " + i + "<br>";
 }
 document.getElementById("loop5").innerHTML = tx;
+
